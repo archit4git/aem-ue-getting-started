@@ -136,6 +136,10 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "Article",
+            "value": "article"
           }
         ]
       }
@@ -216,21 +220,21 @@
     ]
   },
   {
-    "id": "quote",
+    "id": "article",
     "fields": [
       {
-        "component": "richtext",
-        "name": "quote",
+        "component": "aem-content-fragment",
+        "name": "articlepath",
         "value": "",
-        "label": "Quote",
+        "label": "Article Content Fragment path",
         "valueType": "string"
       },
       {
-        "component": "text",
-        "valueType": "string",
-        "name": "author",
-        "label": "Author",
-        "value": ""
+        "component": "text-input",
+        "name": "variation",
+        "value": "",
+        "label": "Variation",
+        "valueType": "string"
       }
     ]
   }
