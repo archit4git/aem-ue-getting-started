@@ -136,12 +136,27 @@
           {
             "name": "Highlight",
             "value": "highlight"
-          },
-          {
-            "name": "Article",
-            "value": "article"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "article",
+    "fields": [
+      {
+        "component": "aem-content-fragment",
+        "name": "articlepath",
+        "value": "",
+        "label": "Article Content Fragment path",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "variation",
+        "value": "",
+        "label": "Variation",
+        "valueType": "string"
       }
     ]
   },
@@ -216,44 +231,6 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "article",
-    "fields": [
-      {
-        "component": "aem-content-fragment",
-        "name": "articlepath",
-        "value": "",
-        "label": "Article Content Fragment path",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "variation",
-        "value": "",
-        "label": "Variation",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "quote",
-    "fields": [
-      {
-        "component": "richtext",
-        "name": "quote",
-        "value": "",
-        "label": "Quote",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "author",
-        "label": "Author",
-        "value": ""
       }
     ]
   }
