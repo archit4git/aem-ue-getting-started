@@ -1,9 +1,13 @@
-import { getAEMPublish, getAEMAuthor } from '../../scripts/endpointconfig.js';
+// import { getAEMPublish, getAEMAuthor } from '../../scripts/endpointconfig.js';
 
 /* eslint-disable no-underscore-dangle */
 export default async function decorate(block) {
-  const aempublishurl = getAEMPublish();
-  const aemauthorurl = getAEMAuthor();
+  // const aempublishurl = getAEMPublish();
+  // const aemauthorurl = getAEMAuthor();
+
+  const aempublishurl = 'https://p14733-e1160558.adobeaemcloud.com';
+  const aemauthorurl = 'https://author-p14733-e1160558.adobeaemcloud.com';
+
   const persistedquery = '/graphql/execute.json/universal-editor-standard-site/ArticleByPath';
   const articlepath = block.querySelector(':scope div:nth-child(1) > div a').innerHTML.trim();
   let variationname = block.querySelector(':scope div:nth-child(2) > div').innerHTML.trim();
